@@ -27,7 +27,7 @@ const Home: NextPage = () => {
 
   return (
     <div
-      className={`flex min-h-screen flex-col items-center justify-center ${
+      className={`flex min-h-screen flex-col items-center  ${
         Mode && 'bg-dark-mode'
       }`}
     >
@@ -36,7 +36,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/dark-logo.svg" />
       </Head>
       <Navbar active={'home'} />
-      <main tw="flex   lg:w-full flex-1 ">
+      <main tw="flex mt-[8rem]   lg:w-full flex-1 ">
         <Toaster />
         <AuthModal />
         <div tw="flex flex-col px-[2px] flex-1 text-center md:text-left   justify-center lg:m-0 lg:w-1/2   lg:px-20">
@@ -62,7 +62,7 @@ const Home: NextPage = () => {
             <button
               onClick={() => router.push('/projects')}
               type="button"
-              tw="border border-white w-[170px] mx-auto md:mx-0 font-semibold h-[49px] mt-[20px] bg-[#2854EECC] text-white rounded-md"
+              tw="border border-white w-[170px] mx-auto md:mx-0 font-semibold h-[49px] mt-[20px] bg-secondary-color text-white rounded-md"
             >
               Explore Projects
             </button>
@@ -70,7 +70,7 @@ const Home: NextPage = () => {
             <button
               onClick={() => dispatch(openModal())}
               type="button"
-              tw="border border-white w-[170px] mx-auto md:mx-0 font-semibold h-[49px] mt-[20px] bg-[#2854EECC] text-white rounded-md"
+              tw="border border-white w-[170px] mx-auto md:mx-0 font-semibold h-[49px] mt-[20px] bg-secondary-color text-white rounded-md"
             >
               JOIN US
             </button>
